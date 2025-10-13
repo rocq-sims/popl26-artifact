@@ -25,7 +25,7 @@ The following commands build the main development in a fresh environment, includ
 # prepare a fresh switch
 opam update
 opam switch create rocq-sims ocaml-base-compiler.4.14.2
-eval $(opam env --switch=rocq-sims)
+eval $(opam env --switch=rocq-sims --set-switch)
 opam repo add rocq-released https://rocq-prover.org/opam/released
 opam update
 # build our development
@@ -47,3 +47,8 @@ cd ../sims-compcert
 coq_makefile -f _CoqProject -o Makefile
 make
 ```
+
+## Axioms
+
+A few results depend on the law of excluded middle: comparisons with other notions of simulation,
+the up-to bind technique, the forward/backward implication and the CompCert instantiation.
