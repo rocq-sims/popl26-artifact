@@ -1,0 +1,9 @@
+[submodule "rocq-sims"]
+	path = rocq-sims
+	url = https://github.com/rocq-sims/rocq-sims.git
+[submodule "sims-compcert"]
+	path = sims-compcert
+	url = https://github.com/rocq-sims/sims-compcert.git
+[submodule "CompCert"]
+	path = CompCert
+	url = https://github.com/AbsInt/CompCert.git
