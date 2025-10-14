@@ -1,7 +1,8 @@
 # rocq-sims
 
 This README documents the artifact for the POPL'26 submission *A Family of Sims with Diverging Interests*.
-The repository for the actual `rocq-sims` library can be found at https://github.com/rocq-sims/rocq-sims/
+This artifact mainly contains a frozen version of the `rocq-sims` library.
+For an up-to-date version of the `rocq-sims` library, see its repository at https://github.com/rocq-sims/rocq-sims/
 
 The de-anonymized paper contains clickable links to this development.
 The README in the `rocq-sims` submodule documents the main library.
@@ -18,6 +19,15 @@ The following command fetches the source code of our development, plus the CompC
 ```sh
 git clone --recurse-submodules https://github.com/rocq-sims/popl26-artifact.git
 cd popl26-artifact
+```
+
+If you downloaded an archive from Zenodo, use these commands from the directory of this README instead
+(to fetch the CompCert dependency, if you intend to build this part of the development):
+```sh
+git clone https://github.com/AbsInt/CompCert.git
+cd CompCert
+git checkout 1670ae76afdb2546402898b6e9064d7229845d24
+cd ..
 ```
 
 The following commands build the main development in a fresh environment, including examples and the CTree instantiation.
