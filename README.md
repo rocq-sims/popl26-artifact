@@ -1,10 +1,11 @@
 # rocq-sims
 
 This README documents the artifact for the POPL'26 submission *A Family of Sims with Diverging Interests*.
+The repository for the actual `rocq-sims` library can be found at https://github.com/rocq-sims/rocq-sims/
 
 The de-anonymized paper contains clickable links to this development.
 The README in the `rocq-sims` submodule documents the main library.
-The README in the `sims-compcert` submodule documents the CompCert instantiation.
+The README in the `sims-compcert` submodule documents the CompCert instantiation of the theory.
 
 ## How to build
 
