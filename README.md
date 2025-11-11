@@ -59,6 +59,18 @@ coq_makefile -f _CoqProject -o Makefile
 make
 ```
 
+## Implementation notes
+
+The theorem statements in Rocq should closely match the statements in the paper.
+Note the following small differences in the implementation.
+
+In the paper, case analyses in `divpresF` and `µsimF` use logical `or` connectors,
+whereas the Rocq development uses more practical Rocq variants. These are equivalent.
+
+The formal definition of `µsimF` from Section 3 does not appear as is in the Rocq development,
+because it is a special case of the more general parameterized `simF` from Section 4
+(with parameters `(freeze_div, lock, delay)`).
+
 ## Axioms
 
 A few results depend on the law of excluded middle: comparisons with other notions of simulation,
