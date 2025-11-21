@@ -1,7 +1,7 @@
 # rocq-sims
 
 This README documents the artifact for the POPL'26 paper *A Family of Sims with Diverging Interests*.
-This artifact mainly contains a frozen version of the `rocq-sims` library.
+This artifact mainly contains the `rocq-sims` library frozen to version 0.2.
 For an up-to-date version of the `rocq-sims` library, see its repository at https://github.com/rocq-sims/rocq-sims/
 
 The paper contains clickable links to this development.
